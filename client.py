@@ -9,7 +9,7 @@ from cryptography.fernet import Fernet
 
 if os.name == 'nt':
     os.system('')
-
+os.system("cls")
 # Palettes with updated ultra-bright Neon Green and Light Gray
 COLORS = [
     "\033[1;96m",  # Bold Cyan
