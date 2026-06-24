@@ -7,9 +7,12 @@ from datetime import datetime
 from hashlib import sha256
 from cryptography.fernet import Fernet
 
+def clear_screen():
+    os.system('cls' if os.name == 'nt' else 'clear')
+
 if os.name == 'nt':
     os.system('')
-os.system("cls")
+clear_screen()
 # Palettes with updated ultra-bright Neon Green and Light Gray
 COLORS = [
     "\033[1;96m",  # Bold Cyan
@@ -44,8 +47,7 @@ def format_colored_message(raw_message):
         
     return f"{time_prefix}{raw_message}"
 
-def clear_screen():
-    os.system('cls' if os.name == 'nt' else 'clear')
+
 
 # 1. Connection inputs
 target_ip = input("Enter Server IP Address: ")
