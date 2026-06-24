@@ -53,10 +53,10 @@ def trigger_pager_vibration():
     """Triggers a distinct double-buzz like a real pager."""
     try:
         # First pulse (350 milliseconds)
-        subprocess.run(["termux-vibrate", "-d", "350", "-f"], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
-        time.sleep(0.18) # Gap between the double-buzz
+        subprocess.run(["termux-vibrate", "-d", "200", "-f"], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+        time.sleep(0) # Gap between the double-buzz
         # Second pulse (350 milliseconds)
-        subprocess.run(["termux-vibrate", "-d", "350", "-f"], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+        subprocess.run(["termux-vibrate", "-d", "200", "-f"], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
     except:
         # Prevents the app from crashing if run outside of Termux (like on a PC)
         pass
