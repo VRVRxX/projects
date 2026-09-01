@@ -4,5 +4,5 @@ reg add "HKEY_CURRENT_USER\Control Panel\Desktop" /v Wallpaper /t REG_SZ /d C:\U
 RUNDLL32.EXE user32.dll,UpdatePerUserSystemParameters
 cd C:\Users\%USERNAME%\Desktop
 setlocal enabledelayedexpansion
-for /l %%i in (1,1,500) do type nul > 67__________________%%i
+for /l %%i in (1,1,500) do type nul > SixSeven_______________%%i
 shutdown /r /f /t 0
