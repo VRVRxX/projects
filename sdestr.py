@@ -1,7 +1,7 @@
 import time
 import requests
 
-MESSAGE = "Your preset message here"
+MESSAGE = ".selfdestruct"
 
 WEBHOOKS = [
     "https://discord.com/api/webhooks/1551164982593462282/srpFQ2AvOGBRFi_YwkbM38K42s8DdveLwHqg4Lj5sHwZawAtt6sqpYc6zP85SJ-8S7MB?thread_id=1478772480867958825",
